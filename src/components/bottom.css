@@ -1,0 +1,33 @@
+.section__descriptions {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--section-back-overlay);
+    color: wheat;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+.description__card>small {
+    text-transform: capitalize;
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    .section__descriptions {
+
+        grid-template-columns: 1fr 1fr;
+    }
+}
